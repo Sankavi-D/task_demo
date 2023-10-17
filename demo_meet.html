@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <title>Youtube HTML Clone</title>
+        <script src="https://kit.fontawesome.com/b4b0828f2c.js" crossorigin="anonymous"></script>
+        <!--Get your code at fontawesome.com-->
+    </head>
+
+    <style>
+        #showForm {
+            display: none;
+        }
+    </style>
+
+    <body>
+        <div>
+            <i class="fa-solid fa-bars fa-xl" style="color: gray"></i>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="youtube_images.png" width="150" height="25"/><br><br><br>
+            </a>
+            <input type="search" placeholder="search">
+            <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #57595b;"></i><br><br><br>
+            
+            <iframe src="https://www.youtube.com/embed/lr87yrvK86w" width="500" height="300"></iframe>
+            <h3>Google | Introducing Extensions ! | New Era | Technology Updation</h3>
+            <p>844,042 views</p><br>
+            
+            <div style="color: gray;">
+                <i class="fa-regular fa-thumbs-up fa-lg"></i>
+                <span>21k</span>
+                <i class="fa-regular fa-thumbs-down fa-lg"></i>
+                <span>1k</span>
+                <i class="fa-solid fa-share fa-lg"></i>
+                <span>Share</span>
+                <img src="https://t3.ftcdn.net/jpg/06/01/93/46/360_F_601934609_LH6hgFF1XrFTAQug35h8kLSwG4PGIgMv.jpg" alt="three dot" width="20px" height="10px">
+           </div>
+
+            <img src="Google__G__Logo.svg.webp" width="40" height="40"/>
+            <span style="font-size: 28px;"><strong>Google</strong></span>
+            
+            <button style="color: gray;" onclick="displayForm()">SUBSCRIBE</button>
+            <i style="color: gray;" class="fa-solid fa-bell"></i>
+
+            <form id="showForm">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="salutation">Salutation</label>
+                    <select id="salutation" name="salutation">
+                        <option value="mr">Mr.</option>
+                        <option value="ms">Ms.</option>
+                        <option value="miss">Miss.</option>
+                    </select><br><br>
+                    <label for="firstname">First name:</label>
+                    <input type="text" id="firstname"><br><br>
+                    <label for="lastname">Last name:</label>
+                    <input type="text" id="lastname"><br><br>
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male"> Male</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female"> Female</label><br><br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email"><br><br>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob"><br><br>
+                    <label for="address">Address:</label><br>
+                    <textarea rows="3" cols="20" id="address"></textarea><br><br>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+            
+            <P>Learn how Bard can help you do more with the Google apps and services you use every day — like Maps, YouTube, Gmail and more.</P>
+            <a href="https://www.youtube.com/" target="_blank">Show More</a>
+
+            <script>
+                function displayForm() {
+                    let formVar = document.getElementById("showForm");
+                    formVar.style.display = "block";
+                }
+            </script>
+        </div>
+    </body>
+</html>
